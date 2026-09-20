@@ -6,25 +6,38 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
+    "scheme": "water-supply",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.abdullahrizwan.watersupply",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.abdullahrizwan.watersupply"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/Splashing around the water jug.png"
+    },
+    "plugins": [
+      "expo-router",
+      ["expo-splash-screen", {
+        "image": "./assets/Splashing around the water jug.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+      }]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "ff9263c1-0a02-4d52-b2bd-81e8fefece1a"
+      }
     }
   }
 }
